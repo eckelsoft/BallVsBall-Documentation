@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 390" role="img" aria-labelledby="title desc">
+  <title id="title">Player and computer ball pools</title>
+  <desc id="desc">Players draft from their available balls and unlock the Pumpkin after ten hours. The single-player computer uses the full selectable pool, including Pumpkin.</desc>
+  <defs>
+    <linearGradient id="bg" x2="0" y2="1"><stop stop-color="#111e32"/><stop offset="1" stop-color="#0b1423"/></linearGradient>
+    <linearGradient id="blue" x2="1" y2="1"><stop stop-color="#13aee6"/><stop offset="1" stop-color="#0873b8"/></linearGradient>
+    <linearGradient id="pink" x2="1" y2="1"><stop stop-color="#f34aaf"/><stop offset="1" stop-color="#b92782"/></linearGradient>
+  </defs>
+  <rect width="1200" height="390" rx="26" fill="url(#bg)"/>
+  <text x="56" y="58" fill="#8fa8c4" font-family="Arial,sans-serif" font-size="16" font-weight="700" letter-spacing="3">THE BALL POOL</text>
+  <text x="56" y="104" fill="#f4f7fb" font-family="Arial,sans-serif" font-size="32" font-weight="800">A special unlock for you. The full pool for your opponent.</text>
+  <g font-family="Arial,sans-serif">
+    <rect x="56" y="144" width="330" height="184" rx="17" fill="#1a2c42" stroke="#20d2ef" stroke-width="2"/>
+    <circle cx="90" cy="181" r="12" fill="#20d2ef"/>
+    <text x="116" y="188" fill="#fff" font-size="20" font-weight="800">YOUR DRAFT</text>
+    <text x="82" y="232" fill="#b9cadd" font-size="18">Choose from your unlocked balls.</text>
+    <text x="82" y="263" fill="#b9cadd" font-size="18">Rerolls offer new balls to pick.</text>
+    <text x="82" y="302" fill="#6ce7f5" font-size="16" font-weight="700">Your progress unlocks Pumpkin.</text>
+    <rect x="435" y="144" width="330" height="184" rx="17" fill="#1a2c42" stroke="#e6a84d" stroke-width="2"/>
+    <text x="461" y="188" fill="#fff" font-size="20" font-weight="800">PUMPKIN REWARD</text>
+    <text x="461" y="240" fill="#f7cc7b" font-size="36" font-weight="800">10 HOURS</text>
+    <text x="461" y="274" fill="#b9cadd" font-size="17">of playtime to claim the ball.</text>
+    <text x="461" y="303" fill="#b9cadd" font-size="16">Progress is saved to your profile.</text>
+    <rect x="814" y="144" width="330" height="184" rx="17" fill="#1a2c42" stroke="#f34aaf" stroke-width="2"/>
+    <circle cx="848" cy="181" r="12" fill="#f34aaf"/>
+    <text x="874" y="188" fill="#fff" font-size="20" font-weight="800">COMPUTER DRAFT</text>
+    <text x="840" y="232" fill="#b9cadd" font-size="18">The bot can pick every ball in</text>
+    <text x="840" y="261" fill="#b9cadd" font-size="18">the selectable pool, including</text>
+    <text x="840" y="290" fill="#f78dcf" font-size="18" font-weight="700">Pumpkin before you unlock it.</text>
+    <text x="600" y="366" text-anchor="middle" fill="#8fa8c4" font-size="15">Unavailable legacy Poison remains out of every draft.</text>
+  </g>
+</svg>

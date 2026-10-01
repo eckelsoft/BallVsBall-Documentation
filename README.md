@@ -1,15 +1,22 @@
-# BallVsBall Documentation
+# BallVsBall
 
-Private repository for the BallVsBall ball catalog, approved artwork references, and verified gameplay documentation.
+**Pick a ball. Set your aim. Let the abilities collide.**
 
-## Authority
+BallVsBall is a Fortnite island built around short, replayable ball battles. Choose a roster, aim each ball, then watch its ability fight for the round. Learn how the match works, see the full ball roster, and explore the progression system below.
 
-The UEFN project is the source of truth for implemented behavior and live balance. This repository records a readable, reviewed snapshot. Update the documentation when the game changes; do not silently treat an old snapshot as current.
+![BallVsBall round flow](assets/diagrams/match-flow.svg)
 
-## Contents
+## Discover the game
 
-- `docs/ball-catalog.md` — current 25-ball selectable catalog, ability summaries, and values verified against the Verse catalog and localization source.
-- `docs/ball-entry-template.md` — template for future detailed entries.
-- `assets/balls/README.md` — artwork import and attribution notes. Only add approved, distributable image exports; do not copy Unreal `.uasset` files here.
+- [Explore all 26 balls](docs/ball-catalog.md) — illustrated icons and current ability details.
+- [Read how matches and rewards work](docs/gameplay-and-economy.md) — the round loop, ball pools, Gold, quests, and reward tokens.
 
-Images have not yet been exported into this repository. The catalog identifies each current in-project icon so approved image exports can be matched safely later.
+![BallVsBall rewards and progression](assets/diagrams/reward-loop.svg)
+
+![Player and computer ball pools](assets/diagrams/ball-pools.svg)
+
+## Documentation notes
+
+Gameplay and balance details are a readable snapshot of the UEFN Verse project, which remains the source of truth. Values can change as the island is updated. Ball icons are PNG exports of the game's textures; they are included here so GitHub renders them directly beside their descriptions.
+
+**Last checked against the game project: October 1, 2026.**

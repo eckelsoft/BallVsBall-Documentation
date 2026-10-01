@@ -4,7 +4,7 @@
 > **Verified against project:** YYYY-MM-DD, revision or Verse file/asset reference  
 > **Balance snapshot:** YYYY-MM-DD
 
-![Ball image](../assets/balls/ball-name.png)
+![Example ball icon — replace with the matching ball PNG](../assets/balls/verity.png)
 
 ## Overview
 

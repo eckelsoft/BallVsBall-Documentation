@@ -1,40 +1,44 @@
-# BallVsBall — Ball catalog
+# Ball catalog
 
-Verified snapshot of the **25 selectable balls** in the UEFN Verse catalog. Names, icon identifiers, and ability values below are transcribed from `Content/ball_probe_catalog.verse` and `Content/ball_probe_text.verse` in the game project. This is documentation, not yet the source of truth; the live Verse implementation remains authoritative. Recheck this page after gameplay or balance changes.
+See the balls at a glance and how their current abilities work. The numbers come from the live Verse catalog and ability descriptions in the game project; they describe this implementation and can change with balance updates.
 
-> **Artwork:** the `Icon asset` column names the existing UEFN texture. No Unreal `.uasset` files have been copied into this repository. Add an approved PNG export under `../assets/balls/` before replacing “pending” with an image embed. This avoids duplicating binary assets or implying they are ready for distribution.
+There are **25 standard balls**. The **Pumpkin Ball** becomes available to a player after ten hours of playtime, for **26 available balls**. In single-player, the computer may also draw the Pumpkin Ball before the player unlocks it. The retired Legacy Poison entry is not selectable.
 
-| Ball | Icon asset (UEFN) | Ability and current documented values | Image |
-|---|---|---|---|
-| Verity | `T_ball_verity` | Hits have a 19% chance to trigger 10s of rage. Rage boosts size by 38% and contact damage to 40. Each trigger has a 4–6s cooldown. | Pending approved export |
-| Blade | `T_ball_blade` | Starts with one orbiting blade; gains one every 4s, up to 5. Each blade deals 8 damage per pass. Taking damage does not remove blades. | Pending approved export |
-| Frost | `T_ball_frost` | Leaves a fading ice trail for 3s. Enemies freeze for 2s and take 4 damage every 0.28s. Overlapping ice does not stack; 0.5s protection follows. | Pending approved export |
-| Apple | `T_ball_apple` | Drops an apple every 1.25s. Allies heal 3 HP; enemies take 5. Each apple is collected once and lasts 10s, up to 12 active. Apples disappear when their owner is knocked out. | Pending approved export |
-| Cactus | `T_ball_cactus` | Plants three cacti after 4s, then every 5s. Enemy contact deals 6 damage and causes a bounce. Allies pass through. Cacti last 5.5s. | Pending approved export |
-| Cell Ball | `T_ball_cell` | Starts with 30 HP; heals up to 40 HP after 1.8s without a hit. A surviving hit at 32 HP or more splits the remaining HP between two cells. Cells share 4.4 HP/s of healing; up to 8 cells and 100 team HP. | Pending approved export |
-| Bomb | `T_ball_bomb` | Drops a bomb every 1.25s. It explodes after 4s for 15 damage and knockback. Each blast hits each enemy once. Allies are safe. | Pending approved export |
-| Spider | `T_ball_spider` | Each wall bounce leaves a thread attached to the spider. Touching enemies slow down and take 1 damage per thread every 0.25s. Up to 32 threads last until owner knockout or round end. | Pending approved export |
-| Shackle Ball | `T_ball_cage` | Creates three rings for 5.2s, every 7.5–10.5s. Enemies that fully enter a ring are trapped inside. Each bounce against the inner edge deals 3 damage. | Pending approved export |
-| Harpoon | `T_ball_harpoon` | Fires a bouncing harpoon after 3s and pulls a caught enemy back. The pull deals 2 damage every 0.12s. The owner stays still and vulnerable. Freeze, shackles or knockout interrupt it; recovery takes 2.5s. | Pending approved export |
-| Laser | `T_ball_laser_violet` | Wall bounces leave fixed lasers for 5s, up to 4 active. Each laser deals 4 damage every 0.5s to enemies in its core. The glow does not hit. Owner knockout clears the lasers. | Pending approved export |
-| Honeycomb | `T_ball_wabenball` | Sends three seeking bees after 2.5s, then every 4s. Each bee hits once for 2 damage and lasts up to 3s. Up to 6 bees can fly at once. Allies are safe. | Pending approved export |
-| Virus | `T_ball_virus` | Contact infects enemies for 4s: 1.05 damage every 0.75s. Drops spores while an enemy is infected. Spores apply or extend infection; damage ticks do not stack. | Pending approved export |
-| Thief | `T_ball_dieb` | Throws knives every 2s, starting after 1.5s; each deals 3 damage. At 80/60/40/20 HP, throws 2/3/4/5 knives instead of one. Healing reduces the count. Each knife hits once. | Pending approved export |
-| Poison Thorn | `T_ball_giftstachel` | Three thorns grow on each wall after 3s, then every 7.5s. Thorns last 6s. Contact deals 2 damage plus 2s of poison (-1.05/s). Each thorn can hit an enemy every 0.65s. | Pending approved export |
-| Electro | `T_ball_electro` | Fires lightning after 1.6s, then every 3.6s: 6 damage. Chains to one nearby enemy for 3 damage. Contact adds 3 damage and a 0.75s stop, once per target every 1.6s. | Pending approved export |
-| Acid Ball | `T_ball_acid` | Fires every 3.2s for 3.15 damage and leaves a puddle for 4s. Puddles deal 2.1 contact damage and burn for 3s (-1.05 every 0.75s). Burn continues outside the puddle; overlapping burns do not stack. | Pending approved export |
-| Range | `T_ball_range` | Sends out an expanding wave every 4.5s. Its edge deals 6 damage once per enemy. The wave expands for 0.95s. | Pending approved export |
-| Snake | `T_ball_snake` | Grows one tail link every 1.6s, up to 5. Links deal 3–7 damage and knock enemies back; the tip hits hardest. Each enemy can take one tail hit every 0.8s. | Pending approved export |
-| Minigun | `T_ball_minigun` | Fires at the nearest enemy every 0.30s for 1 damage. Dealing or taking a hit pauses firing for 0.35s. Shots have no spread or leading. First shot: 3.5–6s. | Pending approved export |
-| Shotgun | `T_ball_shotgun` | Fires seven shots in a spread; each hit deals 4 damage. After 8s without taking a hit, fires a second volley 0.24s later. First volley: 3.5–6s. Next volleys: 4.2–7.2s. | Pending approved export |
-| Axe | `T_ball_axe` | Starts with 120 HP and a spinning axe. Lower HP makes it spin faster and deal more damage (4–12). Only the blade hits. Freeze and pull stop its rotation. | Pending approved export |
-| Glass Ball | `T_ball_glass` | Wall bounces and incoming hits create glass shards. Each shard deals 4 damage to an enemy, then breaks. Up to 32 shards remain until owner knockout or round end. | Pending approved export |
-| Beam Ball | `T_icon_beam` | Charges for 2.5s, then fires for 2s with limited turning speed. Fast enemies can outrun its aim. The first enemy in the beam takes 3 damage every 0.25s. Range: 680 cm. Recharges for 3.75s. | Pending approved export |
-| Vampire Ball | `T_icon_vampire` | Latches onto an enemy for 2s while it keeps moving. Every 0.5s, deals 4 damage and heals the same amount (up to 120 HP). Freeze, shackles, pull or a blocked position break the latch. | Pending approved export |
+| Ball | Icon | Current ability |
+|---|:---:|---|
+| **Verity** | <img src="../assets/balls/verity.png" alt="Verity ball" width="56"> | Taking a hit has a 19% chance to trigger 10 seconds of Rage. Rage increases size by 38% and contact damage to 40. Triggers have a 4–6 second cooldown. |
+| **Blade** | <img src="../assets/balls/blade.png" alt="Blade ball" width="56"> | Starts with one orbiting blade and gains another every 4 seconds, up to five. Each blade deals 8 damage per pass. Hits do not remove blades. |
+| **Frost** | <img src="../assets/balls/frost.png" alt="Frost ball" width="56"> | Leaves an ice trail for 2.75 seconds. Enemies touching it freeze for 1.8 seconds and take six ticks of 4 damage, 0.28 seconds apart. Trails do not stack; a 0.5 second freeze guard follows. |
+| **Apple** | <img src="../assets/balls/apple.png" alt="Apple ball" width="56"> | Drops an apple behind itself every 1.25 seconds. Allies heal 2 HP; enemies take 5 damage. Apples last 10 seconds, can be collected once, and are capped at 12 active. They disappear when their owner is knocked out. |
+| **Cactus** | <img src="../assets/balls/cactus.png" alt="Cactus ball" width="56"> | Plants three cacti after 4 seconds, then every 5 seconds. Enemy contact deals 6 damage and bounces them; allies pass through. Cacti last 5.5 seconds. |
+| **Cell Ball** | <img src="../assets/balls/cell.png" alt="Cell ball" width="56"> | Starts at 30 HP and grows after 1.8 seconds without a hit, up to 40 HP. A hit that leaves it alive at 32 HP or more splits its remaining HP between two cells. Cells share 4.4 HP/s healing, with a team cap of 8 cells and 100 HP. |
+| **Bomb** | <img src="../assets/balls/bomb.png" alt="Bomb ball" width="56"> | Drops a bomb every 1.25 seconds. It explodes after 4 seconds, dealing 15 damage and knockback. Each blast hits each enemy once; allies are safe. |
+| **Spider** | <img src="../assets/balls/spider.png" alt="Spider ball" width="56"> | Wall bounces leave threads attached to the spider. Enemies touching a thread slow down and take 1 damage per thread every 0.25 seconds. Up to 32 threads last until their owner is knocked out or the round ends. |
+| **Shackle Ball** | <img src="../assets/balls/shackle.png" alt="Shackle ball" width="56"> | Creates three rings for 5.2 seconds every 7.5–10.5 seconds. Enemies fully entering a ring are trapped. Each bounce against its inner edge deals 4 damage. |
+| **Harpoon** | <img src="../assets/balls/harpoon.png" alt="Harpoon ball" width="56"> | Fires a bouncing harpoon after 3 seconds and pulls a caught enemy back, dealing 2 damage every 0.12 seconds. The owner stops and stays vulnerable during the pull. Freeze, shackles, or knockout interrupt it; recovery takes 2.5 seconds. |
+| **Laser** | <img src="../assets/balls/laser.png" alt="Laser ball" width="56"> | Wall bounces leave fixed lasers for 5 seconds, up to four active. Each deals 4 damage every 0.5 seconds to enemies in its core. The glow is cosmetic; owner knockout clears the lasers. |
+| **Honeycomb** | <img src="../assets/balls/honeycomb.png" alt="Honeycomb ball" width="56"> | Sends three seeking bees after 2.5 seconds, then every 4 seconds. Each bee hits once for 2 damage and lasts up to 3 seconds. Up to six bees can be active; allies are safe. |
+| **Virus** | <img src="../assets/balls/virus.png" alt="Virus ball" width="56"> | Contact infects an enemy for 4 seconds. The infection deals 1.5 damage every 0.75 seconds. Spores can apply or extend an infection, but infection ticks do not stack. |
+| **Thief** | <img src="../assets/balls/thief.png" alt="Thief ball" width="56"> | Starts throwing knives after 1.5 seconds, then every 2 seconds. Each knife deals 3 damage. At 80/60/40/20 HP it throws 2/3/4/5 knives; healing lowers the count. Each knife can hit once. |
+| **Poison Thorn** | <img src="../assets/balls/poison-thorn.png" alt="Poison Thorn ball" width="56"> | Grows three thorns on each wall after 3 seconds, then every 7.5 seconds. Thorns last 6 seconds. Contact deals 2 damage plus 2 seconds of poison at 1.05 damage/s. Each thorn can hit the same enemy every 0.65 seconds. |
+| **Electro** | <img src="../assets/balls/electro.png" alt="Electro ball" width="56"> | Fires lightning after 1.6 seconds, then every 3.6 seconds for 6 damage. It chains to one nearby enemy for 3 damage. Contact adds 3 damage and a 0.75 second stop, once per target every 1.6 seconds. |
+| **Acid Ball** | <img src="../assets/balls/acid.png" alt="Acid ball" width="56"> | Fires every 3.2 seconds for 3.15 damage and leaves a puddle for 4 seconds. Puddles deal 2.1 contact damage and burn for 3 seconds at 1.05 damage every 0.75 seconds. Burns continue outside the puddle and do not stack. |
+| **Range** | <img src="../assets/balls/range.png" alt="Range ball" width="56"> | Sends an expanding wave every 4.5 seconds. The edge deals 6 damage once to each enemy as it passes; the wave expands for 0.95 seconds. |
+| **Snake** | <img src="../assets/balls/snake.png" alt="Snake ball" width="56"> | Grows a tail link every 1.6 seconds, up to five links. Links deal 3–10 damage and knock enemies back; the tip hits hardest. An enemy can take one tail hit every 0.8 seconds. |
+| **Minigun** | <img src="../assets/balls/minigun.png" alt="Minigun ball" width="56"> | Fires at the nearest enemy every 0.30 seconds for 1 damage. Dealing or taking a hit pauses firing for 0.35 seconds. Shots have no spread or leading; the first shot comes after 1 second. |
+| **Shotgun** | <img src="../assets/balls/shotgun.png" alt="Shotgun ball" width="56"> | Fires seven shots in a spread, each dealing 4 damage on hit. After 8 seconds without taking a hit it fires a second volley 0.24 seconds later. First volley: 3.5–6 seconds; later volleys: 4.2–7.2 seconds. |
+| **Axe** | <img src="../assets/balls/axe.png" alt="Axe ball" width="56"> | Starts with 120 HP and a spinning axe. Lower HP makes it spin faster and deal more damage, from 4 to 12. Only the blade hits; freeze and pull stop its rotation. |
+| **Glass Ball** | <img src="../assets/balls/glass.png" alt="Glass ball" width="56"> | Wall bounces and incoming hits create glass shards. Each shard deals 4 damage to an enemy, then breaks. Up to 32 shards remain until owner knockout or round end. |
+| **Beam Ball** | <img src="../assets/balls/beam.png" alt="Beam ball" width="56"> | Charges for 2.5 seconds, then fires for 2 seconds with limited turning speed. The first enemy in its 680 cm beam takes 3 damage every 0.25 seconds. It recharges for 3.75 seconds. |
+| **Vampire Ball** | <img src="../assets/balls/vampire.png" alt="Vampire ball" width="56"> | Latches onto an enemy for 2 seconds while it keeps moving. Every 0.5 seconds it deals 4 damage and heals the same amount, up to 120 HP. Freeze, shackles, pull, or a blocked position break the latch. |
+| **Pumpkin Ball** · unlockable | <img src="../assets/balls/pumpkin.png" alt="Pumpkin ball" width="56"> | Unlock after 10 hours of playtime. Leaves a pot every 0.7 seconds, up to three active; each lasts 8 seconds, deals 6 damage on contact, and drops candy every 0.7 seconds. Each pot drops up to three candies per wave, then starts a new wave after all of its candies are collected or expire. Each candy deals 4 damage once and lasts 5 seconds. All effects clear on owner knockout. |
 
-## Catalog notes
+## Availability notes
 
-- The Verse enum also retains `Poison` as a **legacy, unavailable** entry (`Selectable := false`). It is not one of the 25 selectable balls and is intentionally omitted from the table. Virus and Poison Thorn are separate selectable abilities.
-- The list order in the game catalog controls menu ordering; stable IDs are used for identity. Do not infer selectable order from the enum declaration.
-- Values here describe the current localized probe catalog. They are not an independent balance approval and may not enumerate every runtime edge case.
-- When updating: verify the current Verse implementation, update this snapshot and artwork references in the same change, and note the source revision/date in the commit.
+- The Pumpkin Ball is a playtime reward for players. It is included in the computer opponent's pool in single-player, even before the player unlocks it.
+- The old poison ID remains in the code for saved-data compatibility. It is unavailable and not a ball in the selectable catalog. Virus and Poison Thorn are separate, available balls.
+- Icon PNGs in this repository are direct exports of the corresponding UEFN textures. Unreal asset files stay in the game project.
+
+## Updating this page
+
+Check the Verse catalog, current gameplay constants, and the player-facing ability descriptions before changing an entry. Keep the icon, name, unlock status, and ability values in sync. Record the game revision or verification date in the commit message.

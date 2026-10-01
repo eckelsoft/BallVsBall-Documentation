@@ -1,3 +1,3 @@
 # Ball artwork
 
-Store only images approved for this documentation repository. Prefer optimized PNG or WebP files with descriptive names such as `ice-ball-icon.png`. Link images from the relevant entry in `docs/ball-catalog.md`.
+This folder contains the 26 ball-icon PNGs shown inline in the [ball catalog](../../docs/ball-catalog.md). They were exported from the matching UEFN textures for this documentation repository. Keep filenames aligned with the catalog links when replacing an icon.
