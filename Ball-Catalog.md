@@ -30,7 +30,3 @@ Current ability descriptions for all 26 balls. Pumpkin Ball is a playtime unlock
 | **Beam Ball** | ![Beam Ball ball](assets/balls/beam.png) | Charges for 2.5 seconds, then fires for 2 seconds with limited turning speed. Fast enemies can outrun its aim. The first enemy in its 680 cm beam takes 3 damage every 0.25 seconds; it then recharges for 3.75 seconds. |
 | **Vampire Ball** | ![Vampire Ball ball](assets/balls/vampire.png) | Latches onto an enemy for 2 seconds while continuing to move. Every 0.5 seconds it deals 4 damage and heals the same amount, up to 120 HP. Freeze, shackles, pull, or a blocked position break the latch. |
 | **Pumpkin Ball** · playtime unlock | ![Pumpkin Ball ball](assets/balls/pumpkin.png) | Leaves a candy pot every 0.7 seconds, up to three active; each expires after 8 seconds. Pots deal 6 damage on contact and drop candies every 0.7 seconds, up to three at a time. They refill after candies are consumed or expire. Each candy deals 4 damage once and expires after 5 seconds. All effects clear on owner knockout. |
-
-## Project notes
-
-This wiki summarizes the live Verse catalog and player-facing ability descriptions. The UEFN project is the source of truth; balance and mechanics may change. Last checked against the project on **October 5, 2026**.
